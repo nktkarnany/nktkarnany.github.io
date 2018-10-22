@@ -1,0 +1,221 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+  <title>Etica Email Signature</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1;">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+  <link rel="icon" href="images/favicon.ico" type="image/icon">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    .generator {
+      display: grid;
+      height: 100vh;
+      width: 100%;
+      padding: 3em 10em;
+    }
+
+    .generator--template {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.01);
+    }
+
+    .generator--controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          Etica Email Signature
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="generator" ng-controller="myCtrl">
+    <div class="generator--template" id="signature">
+
+      <table style="width: 410px; font-family: Arial, sans-serif;" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="font-family: Arial, sans-serif; border-right: 1px solid; border-right-color: #CC0099; padding-right: 10px; vertical-align: middle; text-align: center;" valign="top" rowspan="6" align="center">
+              <img alt="photograph" width="110" border="0" style="border:0; height:auto; width:110px; border-radius: 50%;" ng-src="{{base_url + user.picId}}">
+            </td>
+            <td>
+              <table cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td style="width: 305px; padding-bottom: 3px; padding-left: 10px; vertical-align: top; line-height:15px;" valign="top">
+                      <strong>
+                        <span style="font-size: 14px; font-family: Arial, sans-serif; color:#CC0099;">{{name}}<br></span>
+                      </strong>
+                      <span style="font-family: Arial, sans-serif; font-size:12px; color:#5d5d5d;">{{designation}}</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="color:#5d5d5d; padding-bottom: 3px; padding-top: 3px; padding-left: 10px; vertical-align: top; line-height:16px;" valign="top">
+                      <strong><span style="color: #CC0099; font-family: Arial, sans-serif; font-size: 14px;">Etica Wealth Management (P) Ltd<br></span></strong>
+                      <span style="font-size: 12px; font-family: Arial, sans-serif; color:#5d5d5d;">T : +91 22 2201 1727 <span style="color: #CC0099; font-weight: bold;">|</span> M : <span>{{mobile}}</span><br></span>
+                      <span style="font-size: 12px; font-family: Arial, sans-serif; color:#5d5d5d;">Mumbai <span style="color: #CC0099; font-weight: bold;">|</span> Kolkata <span style="color: #CC0099; font-weight: bold;">|</span> New Delhi <span style="color: #CC0099; font-weight: bold;">|</span> Jorhat (Assam)<br></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <table style="margin-top: 2px; margin-bottom: 2px;">
+                      <tbody>
+                        <tr>
+
+                          <td style="padding-left:10px; vertical-align:top; text-align:left; padding-right: 10px; border-right: 1px solid #CC0099;" valign="top" align="left">
+
+                            <a href="http://eticawealth.com/" target="_blank" rel="noopener" style="text-decoration:none;" title="Visit Etica">
+                              <img alt="banner" width="68" style="width:68; height:auto; border:0;" border="0" src="https://drive.google.com/uc?export=view&id=1k5pYBLDyxRJRz_PXETvMeLJs30ahZv4-">
+                            </a>
+
+                          </td>
+                          <td style="padding-right:10px; padding-left:10px; vertical-align:middle; text-align:center;" valign="middle" align="center">
+
+                            <a href="{{facebook}}" target="_blank" rel="noopener" title="Visit Facebook"><img border="0" width="21" alt="facebook icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=14I7s-kUibnhjd6lfFrdQ7HmZt0edi9LZ"></a>
+
+                            <a href="{{twitter}}" target="_blank" rel="noopener" title="Visit Twitter"><img border="0" width="21" alt="twitter icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=1-5jkNEbofoXalR-sUZgH16qZElzELXO3"></a>
+
+                            <a href="https://www.instagram.com/eticawealth/?hl=en" target="_blank" rel="noopener" title="Visit Instagram"><img border="0" width="21" alt="instagram icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=1c82ORgDGK-JPRQxrKI7qHGH_GLy5u7yh"></a>
+
+                            <a href="{{linkedin}}" target="_blank" rel="noopener" title="Visit LinkedIn"><img border="0" width="21" alt="linkedin icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=1jRwlXLd71LG4iumXLAEAuqUUU4FDVDJp"></a>
+
+                            <a href="https://www.youtube.com/channel/UCubtG4SU0l3y662BaiDFzcg" target="_blank" rel="noopener" title="Visit Youtube Channel"><img border="0" width="21" alt="youtube icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=1sGslyd8jI-2RcB84Ujzl2tA1fUGCUgmh"></a>
+
+                            <a ng-if="zomato != ''" href="{{zomato}}" target="_blank" rel="noopener" title="Visit Zomato Blog"><img border="0" width="21" alt="zomato icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=14rUr4e6EExfB3K1K-E_q8GSWZ2WoJkhE"></a>
+
+                            <a href="http://eticawealth.com/" target="_blank" rel="noopener" title="Visit Etica"><img border="0" width="21" alt="etica icon" style="border:0; height:21px; width:21px" src="https://drive.google.com/uc?export=view&id=1CQzWcCbSbkZeNuyPvcDlIOGEc0iEk_8D"></a>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 2px; padding-left: 10px; line-height:14px;">
+                      <span style="font-size: 12px; font-family: Arial, sans-serif; color:#5d5d5d;"><em>"What is good for the client is also good for the firm"</em><br></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px; padding-top: 5px; float: right; line-height:5px;">
+                      <span style="font-size: 12px; font-family: Arial, sans-serif; color:#CC0099;"><strong>- T Rowe Price Jr.</strong><br></span>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="generator--controls row">
+      <div class="col col-md-6">
+        <form>
+          <div class="form-group" ng-init="name='Gajendra Kothari, CFA, CAIA'">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" ng-model="name">
+          </div>
+          <div class="form-group" ng-init="designation='Managing Director & CEO'">
+            <label for="designation">Designation:</label>
+            <input type="text" class="form-control" id="designation" ng-model="designation">
+          </div>
+          <div class="form-group" ng-init="mobile='+91 98678 24321'">
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" class="form-control" id="mobile" ng-model="mobile">
+          </div>
+          <div class="form-group" ng-init="url = 'https://drive.google.com/open?id=1akjBlAF729Ouiio_p_UQhKb_dTllTQaA'; changePic(url)">
+            <label for="url">Profile Pic Url (Get The Shareable Link For Your Profile Pic In <a href="https://drive.google.com/drive/folders/1WoPCv3Dryd73n6SYSSxZCOWxXh0b0hUo?usp=sharing" target="_blank">Google Drive Here</a>):</label>
+            <input type="text" class="form-control" id="url" ng-model="url" ng-change="changePic(url)">
+          </div>
+        </form>
+      </div>
+      <div class="col col-md-6">
+        <form>
+          <div class="form-group" ng-init="facebook='https://www.facebook.com/eticawealth/'">
+            <label for="facebook">Facebook:</label>
+            <input type="text" class="form-control" id="facebook" ng-model="facebook">
+          </div>
+          <div class="form-group" ng-init="twitter='https://twitter.com/eticawealth'">
+            <label for="twitter">Twitter:</label>
+            <input type="text" class="form-control" id="twitter" ng-model="twitter">
+          </div>
+          <div class="form-group" ng-init="linkedin='https://www.linkedin.com/company/etica-wealth-management-private-limited/'">
+            <label for="linkedin">LinkedIn:</label>
+            <input type="text" class="form-control" id="linkedin" ng-model="linkedin">
+          </div>
+          <div class="form-group" ng-init="zomato=''">
+            <label for="zomato">Zomato (The icon above is hidden because there is no url here.):</label>
+            <input type="text" class="form-control" id="zomato" ng-model="zomato" placeholder="https://www.zomato.com/nktkarnany">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    angular.module('myApp', []).
+    controller('myCtrl', ['$scope', function($scope) {
+
+      $scope.base_url = "https://drive.google.com/uc?export=view&id=";
+
+      $scope.user = {
+        picId: ''
+      };
+
+      function getParamFromUrl(param, url) {
+        var tempUrl = url;
+        tempUrl = tempUrl.substring(tempUrl.indexOf("?") + 1, tempUrl.length);
+        var tempUrlVariables = tempUrl.split('&');
+        for (var i = 0; i < tempUrlVariables.length; i++) {
+          var tempParamName = tempUrlVariables[i].split('=');
+          if (tempParamName[0] == param) {
+            return tempParamName[1];
+          }
+        }
+      }
+
+      $scope.changePic = function(url) {
+        $scope.user.picId = getParamFromUrl("id", url);
+      }
+
+    }]);
+
+  </script>
+
+</body>
+
+</html>
