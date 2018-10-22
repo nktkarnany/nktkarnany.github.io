@@ -1,8 +1,8 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "4.0.0",
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "title": "Personal Webpage",
+    "name": "nktkarnany-profile",
+    "version": "2.0.0",
+    "description": "Ankit Karnany's Personal Webpage",
     "keywords": [
         "css",
         "sass",
@@ -11,19 +11,11 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
-    },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "Ankit Karnany",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/nktkarnany/nktkarnany.github.io.git"
     },
     "dependencies": {
         "bootstrap": "4.0.0",
