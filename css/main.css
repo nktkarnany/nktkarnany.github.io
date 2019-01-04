@@ -398,7 +398,7 @@ body {
 }
 
 .site-page--contact {
-    background: #B7DAED;
+    background: rgb(183, 237, 190);
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: 95% 95%
@@ -456,7 +456,7 @@ body {
 }
 
 .site-page--opensource {
-    background: rgb(197, 228, 214);
+    background: rgb(255, 255, 255);
 }
 
 .slideshow-background {
