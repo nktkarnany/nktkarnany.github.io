@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.nav-header a {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-header .logo {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-header .logo a {
+  font-size: 24px;
+}
+
+.text-red {
+  color: #f44336;
+}
+
+.dish {
+  display: flex;
+  margin: 30px 10px;
+  height: 600px;
+}
+
+.dish-img {
+  flex: 1;
+}
+
+.dish-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.recipe {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.recipe-interaction {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recipe-title {
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+}
+
+.recipe-title:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background-color: #f44336;
+  bottom: 0px;
+  left: 0;
+}
+
+.breadcrumbs {
+  color: rgba(128, 128, 128, 0.3);
+  font-size: 15px;
+}
+
+.breadcrumbs .crumb {
+  padding-left: 15px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.breadcrumbs .crumb:after {
+  content: "\003e";
+  position: absolute;
+  right: 7px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+  content: none;
+}
+
+.recipe-desc {
+  color: rgba(128, 128, 128, 0.6);
+  margin: 30px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.recipe-author {
+  margin: 30px 0;
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.3);
+}
+
+.recipe-author .author-name {
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.recipe-tags {
+  color: rgba(128, 128, 128, 0.3);
+  font-size: 12px;
+}
+
+.recipe-tags .tag {
+  display: inline-block;
+  position: relative;
+}
+
+.recipe-tags .tag:first-child {
+  padding-left: 20px;
+}
+
+.recipe-tags .tag:first-child:before {
+  content: "";
+  background-image: url('./label.svg');
+  background-size: cover;
+  background-origin: center center;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+}
